@@ -1,0 +1,147 @@
+/*Criando um reset básico para permitir uma experiência semelhante em diferentes navegadores*/
+/* colocar onde peguei as fontes no README.md https://fonts.google.com/ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+  font-size: 32px;
+  font-family: "VT323", monospace;
+}
+
+h2, h3, h4, h5 {
+  text-align: center;
+}
+
+.historia{
+  font-family: "Iceland", sans-serif;
+  font-size: 1.5rem;
+  text-align: justify;
+  padding: 1rem;
+}
+
+header{
+  text-align: center;
+  justify-content: center;
+  padding: 5rem;
+  background-image: url("./img/fundo-header.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+main{
+  padding: 2rem 2rem;
+}
+
+main h2{
+  font-family: "Iceland", sans-serif;
+  font-size: 3rem;
+}
+
+main h3, h4{
+  font-family: "Iceland", sans-serif;
+  font-size: 2rem;
+}
+
+footer{
+  margin: auto;
+  padding: 5rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-family: "Iceland", sans-serif;
+  background-color: rgb(70, 69, 69);
+  color: #f0ffff;
+  text-align: center;
+  justify-content: center;
+}
+
+footer a{
+  text-decoration: none;
+  color: #f0ffff;
+
+}
+
+  
+
+.menu{
+  text-align: center;
+  background-image: url("./img/fundo_menu.png");
+  background-size: contain;
+}
+
+.menu a{
+  text-decoration: none;
+  color: azure;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.card{
+  margin: 20px;
+}
+
+.card-title {
+  font-family: "Iceland", sans-serif;
+  font-size: 1.5rem;
+}
+
+.card-text{
+  width: 256px;
+  height: 120px;
+  overflow: auto;
+  font-family: "Iceland", sans-serif;
+  text-align: justify;
+}
+
+nav {
+  padding: 2rem;
+}
+
+nav li{
+  display: inline;
+  padding: 20px;
+  margin: 20px;
+  font-family: "VT323", monospace;
+  font-size: 2rem;
+}
+
+.tituloPrincipal{
+  font-family: "Honk", system-ui;
+  font-size: 4rem;
+}
+
+a:hover {
+  color: red; /* Cor do link ao passar o mouse */
+}
+
+.container2{
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 20px 200px;
+  width: 100%;
+}
+
+.img-historia img{
+  width: 300px;
+}
+
+.img-historia p{
+  text-align: justify;
+}
+
+.hidden {
+  display: none;
+}
+
+.alinhado{
+  text-align: center;
+}

@@ -77,7 +77,7 @@ function qtdXP() {
             classificacao = "Radiante" 
     }
 
-    document.getElementById("final").innerText = "Sua classificação é " + classificacao;
+    document.getElementById("final").innerText = `O Herói de nome **${nomeJogador}** está no nível de **${classificacao}**`;
 }
 
 

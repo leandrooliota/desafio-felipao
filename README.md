@@ -25,7 +25,13 @@ Este projeto é uma aplicação simples em **HTML, CSS e JavaScript** que permit
 1. Abra o arquivo `index.html` em um navegador.  
 2. Digite um valor de XP na caixa de entrada.  
 3. Clique no botão **"Calcular minha classificação"**.  
-4. Veja a categoria do herói ser exibida na tela!  
+4. Veja a categoria do herói ser exibida na tela!
+
+## 🔎 Sites Utilizados
+1. [Fontes do Google: para baixar fontes no estilo gamer](https://fonts.google.com/)
+2. [Canva: para criação e edição de imagens](https://www.canva.com/)
+3. [Gemini: para criação de imagens por IA](https://gemini.google.com/app)
+4. [ChatGPT: para criação das histórias e caracteristas dos personagens](https://chatgpt.com/)
 
 ## 📌 Exemplo de Código (JavaScript)
 

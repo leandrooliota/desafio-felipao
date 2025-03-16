@@ -1,57 +1,49 @@
-/* 
-Crie uma variável para armazenar o nome e a quantidade de experiência (XP) de um herói, depois utilize uma estrutura de decisão para apresentar alguma das mensagens abaixo:
+const state = {
+    view: {
+        nomeJogador : prompt("Digite seu nome aventureiro: "),
+    },
+    values: {
 
-Se XP for menor do que 1.000 = Ferro
-Se XP for entre 1.001 e 2.000 = Bronze
-Se XP for entre 2.001 e 5.000 = Prata
-Se XP for entre 5.001 e 7.000 = Ouro
-Se XP for entre 7.001 e 8.000 = Platina
-Se XP for entre 8.001 e 9.000 = Ascendente
-Se XP for entre 9.001 e 10.000= Imortal
-Se XP for maior ou igual a 10.001 = Radiante
+    },
+    actions: {
+        botoes: ["botao1", "botao2", "botao3", "botao4"],
+    }
 
-## Saída
+}
 
-Ao final deve se exibir uma mensagem:
-"O Herói de nome **{nome}** está no nível de **{nivel}**" 
-*/
-
-const nomeJogador = prompt("Digite seu nome aventureiro: ")
-document.getElementById("resultado").innerText = nomeJogador + " "
+document.getElementById("fulano").innerText = `${state.view.nomeJogador} `
 
 function esconderBotoes(clicado) {
-    const botoes = ["botao1", "botao2", "botao3", "botao4"]; // Lista de IDs dos botões
 
-    botoes.forEach(function(botaoId) {
+    state.actions.botoes.forEach(function(botaoId) {
         // Verifica se o botão atual não é o clicado e o esconde
         if (botaoId !== clicado) {
             document.getElementById(botaoId).style.display = "none"; // Esconde o botão
         }
-        if (botaoId === clicado)
+        if (botaoId === clicado){
             switch (botaoId){
                 case "botao1":
-                    document.getElementById("escolhida").innerHTML = nomeJogador + " você agora é um Mago" 
+                    document.getElementById("escolhida").innerHTML = `${state.view.nomeJogador} você agora é um Mago`  
                     break;
                 case "botao2":
-                    document.getElementById("escolhida").innerHTML = nomeJogador + " você agora é um Espadachin" 
+                    document.getElementById("escolhida").innerHTML = `${state.view.nomeJogador} você agora é um Espadachin`
                     break;
                 case "botao3":
-                    document.getElementById("escolhida").innerHTML = nomeJogador + " você agora é um Elfo Arqueiro" 
+                    document.getElementById("escolhida").innerHTML = `${state.view.nomeJogador} você agora é um Elfo Arqueiro` 
                     break;
                 case "botao4":
-                    document.getElementById("escolhida").innerHTML = nomeJogador + " você agora é um Guerreiro orc" 
+                    document.getElementById("escolhida").innerHTML = `${state.view.nomeJogador} você agora é um Guerreiro Orc` 
                     break;
             }
+        }
     });
 }
 
-const botoes = ["botao1", "botao2", "botao3", "botao4"];
-
-botoes.forEach(function(botaoId) {
+state.actions.botoes.forEach(function(botaoId) {
     document.getElementById(botaoId).addEventListener("click", function() {
         esconderBotoes(botaoId);
     });
-});
+}); 
 
 function qtdXP() {
     let exp = document.getElementById("exp").value;
@@ -77,7 +69,7 @@ function qtdXP() {
             classificacao = "Radiante" 
     }
 
-    document.getElementById("final").innerText = `O Herói de nome **${nomeJogador}** está no nível de **${classificacao}**`;
+    document.getElementById("final").innerText = `O Herói de nome **${state.view.nomeJogador}** está no nível de **${classificacao}**`;
 }
 
 
